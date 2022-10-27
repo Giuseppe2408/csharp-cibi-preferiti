@@ -1,4 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using System;
+using System.Diagnostics.CodeAnalysis;
+
 Console.WriteLine("Hello, World!");
 
 //string[] cibiPreferiti = { "Nutella", "Pasta", "Pizza", "Torta", "Kebab", "McDonald", "carne"};
@@ -86,25 +89,32 @@ Console.WriteLine("Hello, World!");
 //{
 //    Console.WriteLine("inserisci num");
 //    int num = Convert.ToInt32(Console.ReadLine());
-//    int sum = somma += num;
-//    Console.WriteLine(sum);
+//    somma = somma += num;
+
 
 //}
+//Console.WriteLine();
+//Console.WriteLine("la somma è: " + somma);
 
-//snack 4 
+//snack 4
 //Calcola la somma e la media dei numeri da 2 a 10.
 
 //int somma = 0;
 //int i = 0;
-
+//float media = 0;
 
 //for (; i < 10; i++)
 //{
 //    int index = i + 1;
 //    Console.WriteLine(index);
-//    int sum = index += somma;
-//    Console.WriteLine("somma:" + sum);
+//    somma = index += somma;
+//    media = index / 10;
+
 //};
+
+//Console.WriteLine("somma: " + somma);
+//Console.WriteLine();
+//Console.WriteLine("media " + media);
 
 
 //snack 5
@@ -156,16 +166,60 @@ Console.WriteLine("Hello, World!");
 //Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo
 //nell’array.
 
-int[] numUser = new int[6];
-for (int index = 0; index < 6; index++)
-{
-    Console.WriteLine("dimmi un num");
-    int requestNum = Convert.ToInt32(Console.ReadLine());
-    if (requestNum % 2 != 0)
-    {
-        numUser[index] = requestNum;
-        Console.WriteLine(numUser[index]);
-    }
-    
-}
+//int[] numUser = new int[6];
+//for (int index = 0; index < 6; index++)
+//{
+//    Console.WriteLine("dimmi un num");
+//    int requestNum = Convert.ToInt32(Console.ReadLine());
+//    if (requestNum % 2 != 0)
+//    {
+//        numUser[index] = requestNum;
+//    }
+//}
 
+//snack 8
+//Crea un array di numeri interi e fai la somma di tutti gli elementi che sono in
+//posizione dispari.
+
+//int[] integerNum = { 2, 30, 12, 12, 15, 20, 30, 50};
+//int valSomma = 0;
+
+//int arrLength = integerNum.Length;
+//for (int index = 0; index < arrLength; index++) {
+//    if (index % 2 == 1)
+//    {
+//        valSomma = valSomma + integerNum[index];
+//    }
+
+//}
+//Console.WriteLine("La somma è:" + valSomma);
+
+//snack 9
+//Crea un array vuoto e chiedi all’utente un numero da inserire nell’array.
+//Continua a chiedere i numeri all’utente e a inserirli nell’array, fino a quando la
+//somma degli elementi è minore di 50.
+
+//int[] numberUSer = new int[50];
+
+
+//int i = 0;
+//int somma = 0;
+
+//while (i < 50)
+//{
+//    Console.WriteLine("dammi dei numeri");
+//    int inputUser = Convert.ToInt32(Console.ReadLine());
+//    i = inputUser += numberUSer[i];
+
+//    Console.WriteLine(numberUSer[i]);
+//    i++;
+
+//}
+
+//snack 10
+//Fai inserire un numero, che chiameremo N, all’utente.
+//Genera N array, ognuno formato da 10 numeri casuali tra 1 e 100.
+//Ogni volta che ne crei uno, stampalo a schermo.
+
+Console.WriteLine("inserisci numero");
+int inputUser = Convert.ToInt32(Console.ReadLine());
