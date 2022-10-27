@@ -125,23 +125,47 @@ Console.WriteLine("Hello, World!");
 //In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby.
 //Chiedi all’utente il suo nome e comunicagli se può partecipare o meno alla festa.
 
-string[] invited = { "Giovanni", "Mirco", "Paolo", "Giuseppe" };
+//string[] invited = { "Giovanni", "Mirco", "Paolo", "Giuseppe" };
 
-Console.WriteLine("nome partecipante");
-string name = Console.ReadLine();
+//Console.WriteLine("nome partecipante");
+//string name = Console.ReadLine();
+//bool nameList = false;
 
-for (int i = 0; i < invited.Length; i++)
-{
-    if (invited[i] != name)
-    {
-        Console.WriteLine("non puoi entrare");
-    } else
-    {
-        Console.WriteLine("puoi entrare");
-    }
-}
+//for (int i = 0; i < invited.Length; i++)
+//{
+//    if (invited[i] == name)
+//    {
+//        nameList = true;
+//    }
+//    else
+//    {
+//        nameList = false;
+//    }
+//}
+
+//if (nameList)
+//{
+//    Console.WriteLine("puoi entrare");
+//} else
+//{
+//    Console.WriteLine("non puoi entrare");
+//}
 
 //snack 7
 //Crea un array vuoto.
 //Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo
 //nell’array.
+
+int[] numUser = new int[6];
+for (int index = 0; index < 6; index++)
+{
+    Console.WriteLine("dimmi un num");
+    int requestNum = Convert.ToInt32(Console.ReadLine());
+    if (requestNum % 2 != 0)
+    {
+        numUser[index] = requestNum;
+        Console.WriteLine(numUser[index]);
+    }
+    
+}
+
