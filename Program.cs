@@ -80,13 +80,68 @@ Console.WriteLine("Hello, World!");
 //Il software deve chiedere per 10 volte all’utente di inserire un numero.
 //Il programma stampa la somma di tutti i numeri inseriti.
 
-int somma = 0;
+//int somma = 0;
 
-for (int i = 0; i < 10; i++)
+//for (int i = 0; i < 10; i++)
+//{
+//    Console.WriteLine("inserisci num");
+//    int num = Convert.ToInt32(Console.ReadLine());
+//    int sum = somma += num;
+//    Console.WriteLine(sum);
+
+//}
+
+//snack 4 
+//Calcola la somma e la media dei numeri da 2 a 10.
+
+//int somma = 0;
+//int i = 0;
+
+
+//for (; i < 10; i++)
+//{
+//    int index = i + 1;
+//    Console.WriteLine(index);
+//    int sum = index += somma;
+//    Console.WriteLine("somma:" + sum);
+//};
+
+
+//snack 5
+//Il software chiede all’utente di inserire un numero. Se il numero inserito è pari,
+//stampa il numero, se è dispari, stampa il numero successivo.
+//Console.WriteLine("inserisci numero");
+//int numUser = Convert.ToInt32(Console.ReadLine());
+
+//if (numUser % 2 == 0)
+//{
+//    Console.WriteLine(numUser);
+//}
+//else {
+//    Console.WriteLine(numUser + 1);
+//}
+
+//snack 6
+//In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby.
+//Chiedi all’utente il suo nome e comunicagli se può partecipare o meno alla festa.
+
+string[] invited = { "Giovanni", "Mirco", "Paolo", "Giuseppe" };
+
+Console.WriteLine("nome partecipante");
+string name = Console.ReadLine();
+
+for (int i = 0; i < invited.Length; i++)
 {
-    Console.WriteLine("inserisci num");
-    int num = Convert.ToInt32(Console.ReadLine());
-    int sum = somma += num;
-    Console.WriteLine(sum);
-
+    if (invited[i] != name)
+    {
+        Console.WriteLine("non puoi entrare");
+    } else
+    {
+        Console.WriteLine("puoi entrare");
+    }
 }
+
+//snack 7
+//Crea un array vuoto.
+//Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo
+//nell’array.
