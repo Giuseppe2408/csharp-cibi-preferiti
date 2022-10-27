@@ -9,7 +9,7 @@ for(int i = 0; i < cibiPreferiti.Length; i++)
 
 {
     int index = i + 1;
-    Console.WriteLine("classifica cibi preferiti: " + index + cibiPreferiti[i]);
+    Console.WriteLine("classifica cibi preferiti: " + index + " " + cibiPreferiti[i]);
 }
 
 Console.WriteLine("il mio cibo preferito è " + cibiPreferiti[0]);
