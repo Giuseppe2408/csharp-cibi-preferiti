@@ -73,10 +73,12 @@ Console.WriteLine("Hello, World!");
 //if (firstWord.Length < secondWord.Length)
 //{
 //    Console.WriteLine(firstWord);
+//    Console.WriteLine(secondWord);
 //}
 //else
 //{
 //    Console.WriteLine(secondWord);
+//    Console.WriteLine(firstWord);
 //}
 
 //snack 3
@@ -100,17 +102,17 @@ Console.WriteLine("Hello, World!");
 //Calcola la somma e la media dei numeri da 2 a 10.
 
 //int somma = 0;
-//int i = 0;
-//float media = 0;
+//int media = 0;
 
-//for (; i < 10; i++)
+//for (int i = 2; i <= 10; i++)
 //{
-//    int index = i + 1;
-//    Console.WriteLine(index);
-//    somma = index += somma;
-//    media = index / 10;
 
+//    Console.WriteLine(i);
+//    somma = i + somma;
+//    //5 + 7 = 12
 //};
+
+//media = somma / 9;
 
 //Console.WriteLine("somma: " + somma);
 //Console.WriteLine();
@@ -205,13 +207,13 @@ Console.WriteLine("Hello, World!");
 //int i = 0;
 //int somma = 0;
 
-//while (i < 50)
+//while (somma < 50)
 //{
 //    Console.WriteLine("dammi dei numeri");
 //    int inputUser = Convert.ToInt32(Console.ReadLine());
 //    i = inputUser += numberUSer[i];
-
-//    Console.WriteLine(numberUSer[i]);
+//    somma += inputUser;
+//    Console.WriteLine("La somma attuale è: " + somma);
 //    i++;
 
 //}
@@ -221,5 +223,60 @@ Console.WriteLine("Hello, World!");
 //Genera N array, ognuno formato da 10 numeri casuali tra 1 e 100.
 //Ogni volta che ne crei uno, stampalo a schermo.
 
-Console.WriteLine("inserisci numero");
-int inputUser = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("inserisci numero");
+//int inputUser = Convert.ToInt32(Console.ReadLine());
+
+//esercizio giorno 3
+//snack 1
+//Dare la possibilità di inserire due parole.
+Console.WriteLine("inserisci due parole");
+Console.WriteLine();
+string firstWord = Console.ReadLine();
+string secondWord = Console.ReadLine();
+wordLength(firstWord, secondWord);
+
+//Verificare tramite una funzione che le due parole abbiano la stessa lunghezza. Se hanno la stessa lunghezza, stamparle entrambe, altrimenti stampare la più lunga delle due.
+
+void wordLength(string arg1, string arg2)
+{
+    if (arg1 == arg2)
+    {
+        Console.WriteLine("stampa delle due parole uguali: " + arg1 + arg2);
+    }
+    else
+    {
+        if (arg1.Length > arg2.Length)
+        {
+            Console.WriteLine(arg1);
+        }
+        else
+        {
+            Console.WriteLine(arg2);
+        }
+    }
+
+
+}
+
+
+//snack 2
+//Quindi chiedere un numero all’utente e comunicargli se è pari o dispari.
+Console.WriteLine("inserisci un numero");
+Console.WriteLine();
+int userNumber = Convert.ToInt32(Console.ReadLine());
+evenOdd(userNumber);
+
+
+//Scrivere una funzione per verificare se un numero è pari o dispari.
+
+void evenOdd(int arg1)
+{
+    if (arg1 % 2 == 0)
+    {
+        Console.WriteLine("il tuo numero è pari");
+    }
+    else
+    {
+        Console.WriteLine("il tuo numero è dispari");
+    }
+}
